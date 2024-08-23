@@ -1,4 +1,4 @@
-# Chaska
+# Chaska : Food Guide
 
 **Chaska** is a web application that helps you discover nearby restaurants along with their menus, prices, average ratings, and distance from your location. Built with React.js, this project aims to provide users with an easy way to explore dining options in their vicinity.
 
