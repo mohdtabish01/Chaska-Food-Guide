@@ -45,3 +45,5 @@ coverage/
 
 
 upto4.js
+
+src/utils/mockdata.js
