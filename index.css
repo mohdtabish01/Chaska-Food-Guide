@@ -1,0 +1,378 @@
+/* 
+.header{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+}
+
+.nav-items > ul{
+    font-size: 20px;
+    display: flex;
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+    color: rgb(201, 22, 22);
+}
+
+.name{
+    font-size: 24px;
+    padding-left: 260px;
+    color: rgb(201, 22, 22);
+}
+
+.search-bar{
+    margin: 25px; } 
+
+
+
+.restcard{
+    width: 250px;
+    padding: 6px;
+    color: rgb(201, 22, 22);
+    margin: 18px;
+}
+
+.restcard:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.food-img{
+    width: 100%;
+    height: 160px;
+   
+}
+
+.rest-container{
+    display: flex;
+    flex-wrap: wrap;
+} 
+ */
+
+ /* Header Styling */
+.header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 4px 6px; /* Adjusted padding for a compact header */
+    justify-content: space-between;
+    background-color: #ffffff; /* Clean white background */
+    box-shadow: 0 2px 5px rgba(201, 22, 22, 0.2); /* Subtle shadow for depth */
+    border-bottom: 1px solid #ddd; /* Light bottom border */
+}
+
+/* Logo Styling */
+.logo {
+    width: 70px; /* Smaller logo size */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Name Section Styling */
+.name {
+    font-size: 18px; /* Smaller font size for a compact look */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold font for emphasis */
+    margin: 0; /* Removed default margin */
+    padding-left: 300px;
+}
+
+/* Navigation Items Styling */
+.nav-items {
+    display: flex;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0; /* Removed margin */
+    padding: 0; /* Removed padding */
+}
+
+.nav-items > ul > li {
+    font-size: 16px; /* Smaller font size for navigation items */
+    font-weight: bold;
+    margin: 0 8px; /* Reduced spacing */
+    padding: 6px 10px; /* Adjusted padding for clickable areas */
+    color: #555; /* Neutral text color */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+    border-radius: 4px; /* Rounded corners for hover effect */
+}
+
+.nav-items > ul > li:hover {
+    color: #ffffff; /* White text color on hover */
+    background-color: rgb(201, 22, 22); /* Blue background color on hover */
+}
+
+/* Optional Search Bar Styling (if needed) */
+.search-bar {
+    margin: 0;
+}
+
+.restcard {
+    width: 250px;
+    padding: 16px;
+    color: rgb(201, 22, 22);
+    margin: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* or a different background color */
+}
+
+.restcard:hover {
+    border: 1px solid rgb(201, 22, 22);
+    border-width: 2px; /* Increase border width to make it bolder */
+    cursor: pointer;
+    /*transform: scale(1.05);  Slightly enlarge the card on hover */
+    transform: scale(0.96); /* Decreases the size slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Food Image Styling */
+.food-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 12px;
+}
+
+/* Container for Restcards */
+.rest-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align cards horizontally */
+    gap: 16px; /* Space between cards */
+}
+
+
+
+/* --------------------------------------- */
+
+
+.filter-btn{
+    /* margin: 5px; */
+    cursor: pointer;
+}
+
+
+
+/* Header Button Styling */
+.loginbtn {
+    background-color: rgb(201, 22, 22); /* Primary blue color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px 20px; /* Adjust padding for size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    margin-left: 16px;
+}
+
+.loginbtn:hover {
+    background-color: rgb(188, 51, 51); /* Darker blue color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.loginbtn:active {
+    background-color: rgb(114, 32, 32); /* Even darker blue color when button is pressed */
+    transform: scale(0.98); /* Slightly shrink the button when pressed */
+}
+
+/* Shimmer Container */
+.shimmer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    /* padding: 20px; */
+    margin-top: 50px;
+}
+
+/* Individual Shimmer Card */
+.shimmerCard {
+    width: 250px;
+    height: 420px; /* Adjust the height to match your original cards */
+    border-radius: 8px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+    margin: 18px;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+.whole-search-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 
+.shimmer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 18px;
+    margin: 18px 0;
+}
+
+
+.shimmerCard {
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #f6f7f8 25%, #edeef1 50%, #f6f7f8 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.6s infinite linear;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+.shimmerCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.6;
+    animation: pulse 2s infinite;
+    border-radius: 8px;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+} */
+
+
+
+/* --------------------------------------------------------- */
+
+
+/* Add this CSS to your stylesheet */
+
+/* Style for the filter button */
+.filter-btn {
+    background-color: rgb(201, 22, 22); /* Bright red background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    margin-right: 10px; /* Space between filter button and search box */
+}
+
+.filter-btn:hover {
+    background-color: rgb(201, 22, 22); /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.filter-btn:active {
+    background-color: #c23636; /* Even darker red on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Container for search bar and filter button */
+.whole-search-bar {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the search bar */
+}
+
+/* Style for the search bar container */
+.search-bar {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ddd; /* Light border around search bar */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside search bar */
+    background-color: #fff; /* White background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for search input */
+.search-box {
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    padding: 6px 10px; /* Padding inside the input */
+    font-size: 14px; /* Font size */
+    width: 200px; /* Fixed width */
+}
+
+/* Style for search button */
+.search-bar button {
+    background-color: rgb(201, 22, 22); /* Bright red background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.search-bar button:hover {
+    background-color: rgb(201, 22, 22); /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.search-bar button:active {
+    background-color: #c23636; /* Even darker red on click */
+    transform: scale(0.9); /* Slightly shrink on click */
+}
+
+.name{
+    color: rgb(201, 22, 22);
+}
+
