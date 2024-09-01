@@ -58,7 +58,8 @@
 }
 
 .restcard {
-    width: 250px;
+    /* width: 250px; */
+    width: 265px;
     padding: 16px;
     color: rgb(201, 22, 22);
     margin: 18px;
@@ -251,3 +252,24 @@
     color: rgb(201, 22, 22);
 }
 
+.nav-items ul li a {
+    text-decoration: none;
+    color: inherit; /* Keeps the color same as the surrounding text */
+}
+
+
+
+
+/* ================================================= */
+/* Remove blue underline and style the links */
+.rest-container a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+  }
+  
+  /* Additional styling for hover effect (optional) */
+  .rest-container a:hover {
+    color: #333; /* Change color on hover, if desired */
+    transition: color 0.3s ease;
+  }
+  
